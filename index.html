@@ -268,6 +268,7 @@ document.getElementById('nextBtn').style.display='block';
 
 <button class="btn"
 onclick="
+    document.getElementById('music').play();
 document.getElementById('candle').innerHTML='🎂';
 document.getElementById('birthdayMessage').style.display='block'; this.style.display='none';
 createConfetti();
@@ -322,8 +323,7 @@ function showPage(page){
 }
 
 function goToPage2(){
-    document.getElementById("music").play();
-    showPage(2);
+showPage(2);
 }
 
 function popBalloon(balloon,message){
