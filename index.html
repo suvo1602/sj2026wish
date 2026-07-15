@@ -151,11 +151,30 @@ poppedCount++;
 if(poppedCount===4){
 document.getElementById('nextBtn').style.display='block';
 }}
-.message.message {
-    max-width: 800px;
-    width: 90%;
-    height: 300px;
+.message {
+    width: 98%;
+    max-width: 1000px;
+    height: 350px;
+    
+    margin: 20px auto;
+    padding: 25px;
+    
+    background: #fffdf5;
+    border: 3px solid #f3d9a3;
+    border-radius: 25px;
+    
+    color: #444;
+    text-align: center;
+    
     overflow-y: auto;
+    
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+.birthday-line {
+    text-align: center;
+    font-size: 14px;
+    line-height: 1.4;
+}
     <div id="birthdayMessage" class="message" style="display:none;">
     
     padding: 20px;
@@ -188,6 +207,20 @@ document.getElementById('nextBtn').style.display='block';
         transform: translateY(-10px);}}
         #candle {
     animation: float 2s ease-in-out infinite;
+}
+        .pin {
+    position: sticky;
+    top: 10px;
+    float: right;
+    width: 50px;
+    height: 50px;
+    background:white(255, 20, 147, 0.5);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    z-index: 100;
 }
 </style>
 </head>
@@ -279,7 +312,7 @@ Blow Candle 🕯️
 </button>
     
 <div id="birthdayMessage" class="message" style="display:none;">
-
+<div class="pin">🐒</div>
         <br><br>
         জন্মদিনৰ শুভেচ্ছা থাকিল ধুনীয়া ডাইনী।! 🎂🎉
 
